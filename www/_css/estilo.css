@@ -1,1 +1,12 @@
 @charset "UTF-8";
+
+nav#menu-top ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu-top li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+}
