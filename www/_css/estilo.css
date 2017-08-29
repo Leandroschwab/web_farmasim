@@ -1,12 +1,35 @@
 @charset "UTF-8";
-
+div#interface{
+    width: 800px;
+    margin: auto;
+}
 nav#menu-top ul{
+float: right;
     list-style: none;
     text-transform: uppercase;
 }
 nav#menu-top li {
+
     display: inline-block;
     background-color: #dddddd;
     padding: 10px;
     margin: 5px;
 }
+nav#menu-top li:hover{
+    background-color: lightsteelblue;
+}
+nav#menu-top a:link,a:visited {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+
+footer#rodape{
+    bottom: 0;
+    position: fixed;
+    width: 800px;
+}footer#rodape p{
+text-align: center;
+ }
