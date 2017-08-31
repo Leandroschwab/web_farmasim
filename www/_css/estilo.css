@@ -1,6 +1,6 @@
 @charset "UTF-8";
 div#interface{
-    width: 800px;
+    width: 1024px;
     margin: auto;
 }
 nav#menu-top ul{
@@ -29,7 +29,7 @@ nav#menu-top a:link,a:visited {
 footer#rodape{
     bottom: 0;
     position: fixed;
-    width: 800px;
+    width: 1024px;
 }footer#rodape p{
 text-align: center;
  }
