@@ -7,17 +7,16 @@
 </head>
 <body>
 <div id="interface">
+<?php include("_includes/header.php"); ?>
 
-
-
-    <?php include("_includes/header.php"); ?>
+<p>
+    home em constrção
+</p>
 
 
 
 
 <?php include ("_includes/footer.php"); ?>
-
-
 
 </div>
 
