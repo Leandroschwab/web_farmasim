@@ -8,15 +8,18 @@
 <body>
 <div id="interface">
     <?php include("_includes/header.php"); ?>
+    lista de remedios (editar)
 
-    <p>
-        remedios em constrção
-    </p>
+<form>
+    <fildset>
+        <legend>Cadastro de remédio</legend>
+        <p><label for="cNameRemedio">Nome do remédio: </label><input type="text" name="tNameRemedio" id="cNameRemedio" size="40" maxlength="40" placeholder="Nome do remédio"></p>
+        <p>categoria: </p>
 
+    </fildset>
+</form>
 
-
-
-    <?php include ("_includes/footer.php"); ?>
+     <?php include ("_includes/footer.php"); ?>
 
 </div>
 
