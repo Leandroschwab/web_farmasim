@@ -20,7 +20,6 @@
                 <li><a href="print_receitas.php">imprimir receitas</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
             </ul>
-
         </nav>
         <hr/>
 
