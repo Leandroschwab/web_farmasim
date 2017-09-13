@@ -9,11 +9,11 @@
 <div id="interface">
     <?php include("_includes/header.php"); ?>
 
-    <form method="get">
+    <form method="post" action="print_receitas.php">
         <fildset>
             <legend>Info para impressao</legend>
 
-            <p><label for="cFolha">Tipo da folha: </label><select name="tFolha" id="cFolha">
+            <p><label for="cTipoFolha">Tipo da folha: </label><select name="tTipoFolha" id="cTipoFolha">
                     <option value="p6080" selected>Pimaco 6080</option>
                 </select>
             </p>
@@ -22,9 +22,9 @@
         <br>
         <fildset>
             <legend>Info da etiqueta</legend>
-            <p><label for="cNamePaciente">Nome do paciente: </label><input type="text" name="tNamePaciente" id="cNamePaciente" size="40" maxlength="40" placeholder="Nome do Paciente"></p>
+            <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente" id="cNomePaciente" size="40" maxlength="40" placeholder="Nome do Paciente"></p>
 
-            <p><label for="cNameRemedio">Nome do remédio: </label><input type="text" name="tNameRemedio" id="cNameRemedio" size="40" maxlength="40" placeholder="Nome do remédio"></p>
+            <p><label for="cNomeRemedio">Nome do remédio: </label><input type="text" name="tNomeRemedio" id="coameRemedio" size="40" maxlength="40" placeholder="Nome do remédio"></p>
             <p><label for="CHora">Hora: </label><select name="tHora" id="CHora">
                     <option value="0600" selected>06:00</option>
                     <option value="0800" selected>08:00</option>

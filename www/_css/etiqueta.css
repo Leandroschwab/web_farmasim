@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div#folha{
+    width: 216mm;
+    height: 279mm;
+    background-color: #ccbab0;
+    margin: auto;
+    }
+table#tabela{
+    padding-top: 12.5mm;
+    }
+
+table#tabela td{
+
+
+}
+div.p6080{
+    width: 66.7mm;
+    height: 25.4mm;
+    margin-left: 3.9mm;
+    background-color: #dddddd;
+}
