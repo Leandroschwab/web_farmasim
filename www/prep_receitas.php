@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title>FarmaSIM</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/prep_receitas.css">
 </head>
 <body>
 <div id="interface">
@@ -17,14 +18,36 @@
                     <option value="p6080" selected>Pimaco 6080</option>
                 </select>
             </p>
-            <p><label for="cPos">Posicao da etiqueta: </label><input type="number" min="1" max="500" name="tPos" id="cPos" value="1"></p>
+            <p>Posicao da etiqueta:
+                <?php
+                $tipominifolha = "miniP6080";
+                echo("<table id=\"tabela\" cellspacing=\"0\" cellpadding=\"0\">");
+                $posl = 0;
+                for ($i = 1; $i <= 10; $i++) {
+                    echo("<tr>");
+                    for ($j = 1; $j <= 3; $j++) {
+                        $posl++;
+                        echo("<td><div class=\"" . $tipominifolha . "\">");
+                        echo("<input type=\"radio\" value=\"".$posl."\" name=\"tPos\" id=\"c".$posl."\" >");
+                        echo("<label for=\"c".$posl."\">" . $posl . "</label>");
+                        echo("</div></td>");
+                    }
+                    echo("</tr>");
+                }
+                ?>
+            </table>
+            </p>
         </fildset>
         <br>
         <fildset>
             <legend>Info da etiqueta</legend>
-            <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente" id="cNomePaciente" size="40" maxlength="40" placeholder="Nome do Paciente"></p>
+            <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente"
+                                                                           id="cNomePaciente" size="40" maxlength="40"
+                                                                           placeholder="Nome do Paciente"></p>
 
-            <p><label for="cNomeRemedio">Nome do remédio: </label><input type="text" name="tNomeRemedio" id="coameRemedio" size="40" maxlength="40" placeholder="Nome do remédio"></p>
+            <p><label for="cNomeRemedio">Nome do remédio: </label><input type="text" name="tNomeRemedio"
+                                                                         id="cNomeRemedio" size="40" maxlength="40"
+                                                                         placeholder="Nome do remédio"></p>
             <p><label for="CHora">Hora: </label><select name="tHora" id="CHora">
                     <option value="0600" selected>06:00</option>
                     <option value="0800" selected>08:00</option>
@@ -33,13 +56,13 @@
                     <option value="2000" selected>20:00</option>
                     <option value="2200" selected>22:00</option>
 
-                </select> </p>
+                </select></p>
             <p><label for="cCor">Cor: </label><input type="color" name="tCor" id="cCor"></p>
 
         </fildset>
         <input type="submit">
     </form>
-    <?php include ("_includes/footer.php"); ?>
+    <?php include("_includes/footer.php"); ?>
 
 </div>
 

@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 div#folha{
-    width: 216mm;
-    height: 279mm;
+    width: 215.9mm;
+    height: 279.4mm;
     background-color: #ccbab0;
     margin: auto;
-    }
+}
 table#tabela{
     padding-top: 12.5mm;
-    }
+}
 
 table#tabela td{
 
@@ -19,4 +19,18 @@ div.p6080{
     height: 25.4mm;
     margin-left: 3.9mm;
     background-color: #dddddd;
+}
+div.p6080 p{
+    margin:0mm;
+    padding: 1.5mm;
+}
+div.divbola{
+    color:#fff;
+    width:10mm;
+    height:10mm;
+    line-height:10mm;
+    float: right;
+    font-size:5mm;
+    border-radius:50%;
+    margin: 5mm;
 }
