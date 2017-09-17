@@ -19,22 +19,23 @@
                 </select>
             </p>
             <p>Posicao da etiqueta:
-                <?php
-                $tipominifolha = "miniP6080";
-                echo("<table id=\"tabela\" cellspacing=\"0\" cellpadding=\"0\">");
-                $posl = 0;
-                for ($i = 1; $i <= 10; $i++) {
-                    echo("<tr>");
-                    for ($j = 1; $j <= 3; $j++) {
-                        $posl++;
-                        echo("<td><div class=\"" . $tipominifolha . "\">");
-                        echo("<input type=\"radio\" value=\"".$posl."\" name=\"tPos\" id=\"c".$posl."\" >");
-                        echo("<label for=\"c".$posl."\">" . $posl . "</label>");
-                        echo("</div></td>");
+                <script>
+                var tipominifolha = "miniP6080";
+                document.write('<table id=\"tabela\" cellspacing=\"0\" cellpadding=\"0\">');
+                var posl = 0;
+                var i, j ;
+                for (i = 1; i <= 10; i++) {
+                    document.write('<tr>');
+                    for (j = 1; j <= 3; j++) {
+                        posl++;
+                        document.write('<td><div class=\"' + tipominifolha + '\">');
+                        document.write('<input type=\"radio\" value=\"' + posl + '\" name=\"tPos\" id=\"c' + posl + '\" >');
+                        document.write('<label for=\"c' + posl+ '\">' + posl + '</label>');
+                        document.write('</div></td>');
                     }
-                    echo("</tr>");
+                    document.write('</tr>');
                 }
-                ?>
+                </script>
             </table>
             </p>
         </fildset>
