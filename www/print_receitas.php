@@ -19,8 +19,8 @@
     </style>")
     ?>
 </head>
-<body>
-<div id="folha">
+<body id="folha">
+<div>
     <table id="tabela" cellspacing="0" cellpadding="0">
         <?php
         $posl=0;
