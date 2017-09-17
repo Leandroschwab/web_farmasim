@@ -29,7 +29,7 @@
             for ($j = 1; $j <= 3; $j++) {
                 $posl++;
                 echo("<td><div class=\"" . $tipoFolha . "\">");
-                if ($posl == $pos) {
+                if (true) {
                     echo("
                         <div class='divbola' id='bola1'> Bola1</div>
                         <p>Nome: " . $nomePaciente . "<br> Remedio: " . $nomeRemedio . "<br> Hora: " . $hora . "</p>"

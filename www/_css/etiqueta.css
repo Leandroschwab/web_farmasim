@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@page {
+    margin: 0;
+}
 
 div#folha{
     width: 215.9mm;
