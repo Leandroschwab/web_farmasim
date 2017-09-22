@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/prep_receitas.css">
     <script>
+        var numEtiquetas = 1;
+        var numEtiquetasTotal = 1;
         function addEtiqueta() {
+
             var para = document.createElement("DIV");
-            para.innerHTML += '<div><p><label for=\"cNomeRemedio\">Nome do remédio: </label><input type=\"text\" name=\"tNomeRemedio\" id=\"cNomeRemedio\" size=\"40\" maxlength=\"40\" placeholder=\"Nome do remédio\"></p><p><label for=\"CHora\">Hora: </label><select name=\"tHora\" id=\"CHora\"><option value=\"0600\" selected>06:00</option><option value=\"0800\" selected>08:00</option><option value=\"1200\" selected>12:00</option><option value=\"1600\" selected>16:00</option><option value=\"2000\" selected>20:00</option><option value=\"2200\" selected>22:00</option></select ></p><p><label for=\"cCor\">Cor: </label><input type=\"color\" name=\"tCor\" id=\"cCor\"></p></div>';
+            para.innerHTML += '<div><p><label for=\"cNomeRemedio'+ numEtiquetas + '\">Nome do remédio'+ numEtiquetas + ':  </label><input type=\"text\" name=\"tNomeRemedio'+ numEtiquetas + '\" id=\"cNomeRemedio'+ numEtiquetas + '\" size=\"40\" maxlength=\"40\" placeholder=\"Nome do remédio\"></p><p><label for=\"CHora'+ numEtiquetas + '\">Hora: </label><select name=\"tHora'+ numEtiquetas + '\" id=\"CHora'+ numEtiquetas + '\"><option value=\"0600\" selected>06:00</option><option value=\"0800\" selected>08:00</option><option value=\"1200\" selected>12:00</option><option value=\"1600\" selected>16:00</option><option value=\"2000\" selected>20:00</option><option value=\"2200\" selected>22:00</option></select ></p><p><label for=\"cCor'+ numEtiquetas + '\">Cor: </label><input type=\"color\" name=\"tCor'+ numEtiquetas + '\" id=\"cCor'+ numEtiquetas + '\"></p></div>';
             document.getElementById("myDIV").appendChild(para);
+            numEtiquetas++;
         };
     </script>
 </head>
@@ -50,11 +54,16 @@
                 <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente" id="cNomePaciente" size="40" maxlength="40" placeholder="Nome do Paciente"></p>
                 <fildset>
                     <div id="myDIV"></div>
+                    <script>
+                        while(numEtiquetas<=numEtiquetasTotal){
+                            addEtiqueta()
+                        }
+                    </script>
                     <button type="button" onclick="addEtiqueta()">Click Me!</button>
                 </fildset>
 
             </fildset>
-            <input type="submit" onclick="window.open('print_receitas.php','other_window')">
+            <input type="submit">
         </form>
     </div>
     <?php include("_includes/footer.php"); ?>
