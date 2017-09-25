@@ -14,17 +14,17 @@
     echo("
     <style>
         div#bola1{
-        box-shadow: inset 0 0 0 1000px " . $cor . "   
+        box-shadow: inset 0 0 0 1000px " . $cor1 . "   
         }
     </style>");
     echo("
         <script>
-        var jTipoFolha =". $tipoFolha .";
-        var jPos=". $pos .";
-        var jNomePaciente =".$nomePaciente.";
-        var jNomeRemedio =".$nomeRemedio1.";
-        var jHora =".$hora1.";
-        var jCor =".$cor1.";
+        var jTipoFolha =\"". $tipoFolha ."\";
+        var jPos= ". $pos .";
+        var jNomePaciente =\"".$nomePaciente."\";
+        var jNomeRemedio =\"".$nomeRemedio1."\";
+        var jHora =\"".$hora1."\";
+        var jCor = \"".$cor1."\" ;
         
         function fazTabela() {
           var posl = 0;
@@ -33,8 +33,15 @@
                 document.write(\"<tr>\");
                 for(j=1;j<=3;j++){
                     posl++;
-                    document.write(pols);
+                    document.write(\"<td><div class=\\' \" + jTipoFolha  + \" \\' > \");
+                    if(true){
+                    document.write(\"<div class=\\'divbola\\' id=\\'bola1\\'> Bola1</div> \");
+                       document.write(\" <p>Nome:\\' \" + jNomePaciente + \" \\'<br> Remedio:\\' \" + jNomeRemedio + \" \\'<br> Hora:\\' \" + jHora + \" \\'</p>\");
+                        }
+                    document.write(\"</div></td>\");
+               
                 }
+                document.write(\"</tr>\")
             }
         }
         
@@ -49,24 +56,7 @@
 <div>
     <table id="tabela" cellspacing="0" cellpadding="0">
         <script>fazTabela();</script>
-        <?php
-        $posl = 0;
-        for ($i = 1; $i <= 10; $i++) {
-            echo("<tr>");
-            for ($j = 1; $j <= 3; $j++) {
-                $posl++;
-                echo("<td><div class=\"" . $tipoFolha . "\">");
-                if (true) {
-                    echo("
-                        <div class='divbola' id='bola1'> Bola1</div>
-                        <p>Nome: " . $nomePaciente . "<br> Remedio: " . $nomeRemedio . "<br> Hora: " . $hora . "</p>"
-                    );
-                }
-                echo("</div></td>");
-            }
-            echo("</tr>");
-        }
-        ?>
+
 
     </table>
 </div>
