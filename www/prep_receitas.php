@@ -13,6 +13,7 @@
             var para = document.createElement("DIV");
             para.innerHTML += '<div><p><label for=\"cNomeRemedio'+ numEtiquetas + '\">Nome do remédio'+ numEtiquetas + ':  </label><input type=\"text\" name=\"tNomeRemedio'+ numEtiquetas + '\" id=\"cNomeRemedio'+ numEtiquetas + '\" size=\"40\" maxlength=\"40\" placeholder=\"Nome do remédio\"></p><p><label for=\"CHora'+ numEtiquetas + '\">Hora: </label><select name=\"tHora'+ numEtiquetas + '\" id=\"CHora'+ numEtiquetas + '\"><option value=\"0600\" selected>06:00</option><option value=\"0800\" selected>08:00</option><option value=\"1200\" selected>12:00</option><option value=\"1600\" selected>16:00</option><option value=\"2000\" selected>20:00</option><option value=\"2200\" selected>22:00</option></select ></p><p><label for=\"cCor'+ numEtiquetas + '\">Cor: </label><input type=\"color\" name=\"tCor'+ numEtiquetas + '\" id=\"cCor'+ numEtiquetas + '\"></p></div>';
             document.getElementById("myDIV").appendChild(para);
+            document.getElementById("cNumEtiquetas").value = numEtiquetas;
             numEtiquetas++;
         };
     </script>
@@ -46,6 +47,7 @@
                         }
                         document.write('</table>')
                     </script>
+                    <input type="hidden" id="cNumEtiquetas" name="tQuant" value="1">
                 </div>
             </fildset>
             <br>
