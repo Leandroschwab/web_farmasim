@@ -9,12 +9,7 @@
     $pos = $_POST["tPos"];
     $nomePaciente = $_POST["tNomePaciente"];
     $quant = $_POST["tQuant"];
-    /*  echo("
-      <style>
-          div#bola1{
-          box-shadow: inset 0 0 0 1000px " . $cor1 . "
-          }
-      </style>");*/
+
     echo("
         <script>
         var jTipoFolha =\"" . $tipoFolha . "\";
@@ -39,10 +34,11 @@
 
 
     echo("   
-    function fazTabela() {
+          function fazTabelaEtiqueta() {
           var posl = 1;
           var i,j;
           var etiqueta = 1;
+          document.write(\"<div style='visibility: collapse'><div id=\\'folhaEtiqueta\\'><table id=\\'tabela\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
             for(i=1;i<=10;i++){
                 document.write(\"<tr>\");
                 for(j=1;j<=3;j++){
@@ -60,20 +56,30 @@
                 }
                 document.write(\"</tr>\")
             }
-        }      
+          }
+                
+                
 </script>
     ");
+    for($i=1;$i<=$quant;$i++){
+    echo("
+      <style>
+          div#bola".$i."{
+          box-shadow: inset 0 0 0 1000px " . $cor[$i] . "
+          }
+      </style>");
+    }
+
     ?>
 </head>
 <body id="folha">
-<div>
-    <table id="tabela" cellspacing="0" cellpadding="0">
-        <script>fazTabela();</script>
+        <script>fazTabelaEtiqueta();</script>
 
 
     </table>
 </div>
-
+</div>
+</body>
 </body>
 
 </html>
