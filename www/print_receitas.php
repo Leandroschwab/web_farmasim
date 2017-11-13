@@ -38,7 +38,7 @@
           var posl = 1;
           var i,j;
           var etiqueta = 1;
-          document.write(\"<div style='visibility: collapse'><div id=\\'folhaEtiqueta\\'><table id=\\'tabela\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
+          document.write(\"<div id=\\'tabelaEtiqueta\\'><div id=\\'folhaEtiqueta\\'><table id=\\'tabela\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
             for(i=1;i<=10;i++){
                 document.write(\"<tr>\");
                 for(j=1;j<=3;j++){
@@ -54,6 +54,56 @@
                     document.write(\"</div></td>\");
                posl++;
                 }
+                document.write(\"</tr>\")
+            }
+          }
+          function fazTabelaEtiqueta2() {
+          var i,j;
+          var etiqueta = 1;
+          document.write(\"<div id=\\'tabelaHorario\\'><div id=\\'folhaHorario\\'><table id=\\'tabelaH\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
+                document.write(\"<tr>\");
+                
+                document.write(\"<td id=\\'tabelaH1\\'>\");
+                document.write(\" <p>OIOI</p>\");
+                document.write(\"</td>\");
+                
+                document.write(\"<td class=\\'tabelaH2\\'>\");
+                document.write(\" <p>22222</p>\");
+                document.write(\"</td>\");
+                                
+                document.write(\"<td class=\\'tabelaH2\\'>\");
+                document.write(\" <p>33333</p>\");
+                document.write(\"</td>\");
+                                
+                document.write(\"<td class=\\'tabelaH2\\'>\");
+                document.write(\" <p>444444</p>\");
+                document.write(\"</td>\");
+                                
+                document.write(\"<td class=\\'tabelaH2\\'>\");
+                document.write(\" <p>55555</p>\");
+                document.write(\"</td>\");
+                                
+                document.write(\"<td class=\\'tabelaH2\\'>\");
+                document.write(\" <p>666666</p>\");
+                document.write(\"</td>\");
+                document.write(\"</tr>\")
+                for(i=1;i<=jQuant;i++){
+                document.write(\"<tr>\");
+                for(j=0;j<=5;j++){
+                    
+                    document.write(\"<td class=\\'tabelaNomeRemedio\\'><div>\");
+                                   
+                    if(j==0){ 
+                              document.write(\" <p>\" + jNomeRemedio[etiqueta] + \" </p>\");        
+                       }
+                    if(j==jHora[etiqueta]){
+                        document.write(\"<div class=\\'divbola\\' id=\\'bola\"+ etiqueta +\"\\'> Bola1</div> \");
+                    }
+                                          
+                    document.write(\"</div></td>\");
+               
+                }
+                etiqueta++;
                 document.write(\"</tr>\")
             }
           }
@@ -73,7 +123,7 @@
     ?>
 </head>
 <body id="folha">
-        <script>fazTabelaEtiqueta();</script>
+        <script>fazTabelaEtiqueta2();</script>
 
 
     </table>

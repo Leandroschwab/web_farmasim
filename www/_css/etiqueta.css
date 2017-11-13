@@ -23,10 +23,7 @@ table#tabela{
     padding-top: 12.5mm;
 }
 
-table#tabela td{
 
-
-}
 div.p6080{
     width: 66.7mm;
     height: 25.4mm;
@@ -46,4 +43,32 @@ div.divbola{
     font-size:5mm;
     border-radius:50%;
     margin: 5mm;
+}
+
+div#folhaHorario{
+    height: 215.9mm;
+    width: 279.4mm;
+    background-color: #ccbab0;
+    margin: auto;
+}
+table#tabelaH{
+    padding-top: 30mm;
+    padding-left: 39.7mm;
+}
+td#tabelaH1{
+    width: 50mm;
+    height: 40mm;
+    margin-left: 0mm;
+    background-color: #dddddd;
+}
+td.tabelaH2{
+    width: 30mm;
+    height: 40mm;
+    margin-left: 0mm;
+    background-color: #dddddd;
+}
+td.tabelaNomeRemedio{
+    height: 12mm;
+    margin-left: 0mm;
+    background-color: #dddddd;
 }
