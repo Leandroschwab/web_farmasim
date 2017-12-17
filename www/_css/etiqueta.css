@@ -3,9 +3,18 @@
 @page{
     margin: 0px;
 }
+@media print{
+    div#boxbutton{
+        display: none;
+    }
+
+}
 body{
     margin: 0px;
     padding: 0px;
+}
+div#boxbutton{
+    float: right;
 }
 div#folhaTabela{
     width: 215.9mm;
@@ -52,23 +61,48 @@ div#folhaHorario{
     margin: auto;
 }
 table#tabelaH{
+
     padding-top: 30mm;
     padding-left: 39.7mm;
 }
+table#tabelaH td{
+    border: 1px solid black;
+}
+
 td#tabelaH1{
+
     width: 50mm;
     height: 40mm;
     margin-left: 0mm;
     background-color: #dddddd;
+}
+td#tabelaH1 p{
+
+    margin-left: 5mm;
+
 }
 td.tabelaH2{
     width: 30mm;
     height: 40mm;
     margin-left: 0mm;
     background-color: #dddddd;
+    text-align: center;
 }
 td.tabelaNomeRemedio{
     height: 12mm;
-    margin-left: 0mm;
+    margin-left: mm;
     background-color: #dddddd;
+}
+td.tabelaNomeRemedio p{
+    margin-left: 4mm;
+}
+
+div.divbola2{
+    color:#fff;
+    width:10mm;
+    height:10mm;
+    line-height:10mm;
+    font-size:5mm;
+    border-radius:50%;
+    margin: 5mm;
 }

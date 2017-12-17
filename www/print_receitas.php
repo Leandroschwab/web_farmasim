@@ -34,78 +34,106 @@
 
 
     echo("   
-          function fazTabelaEtiqueta() {
+            function removetables(){
+             if(document.getElementById(\"tabelaEtiqueta\")!=null){
+             var elem = document.getElementById(\"tabelaEtiqueta\");
+             elem.parentNode.removeChild(elem);
+            }
+          if(document.getElementById(\"tabelaHorario\")!=null){
+             var elem = document.getElementById(\"tabelaHorario\");
+             elem.parentNode.removeChild(elem);
+            }
+            }
+          function fazTabelaEtiqueta1() {
+            removetables();
           var posl = 1;
           var i,j;
           var etiqueta = 1;
-          document.write(\"<div id=\\'tabelaEtiqueta\\'><div id=\\'folhaEtiqueta\\'><table id=\\'tabela\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
+          
+          var g = document.createElement(\"DIV\");
+          
+          g.setAttribute(\"id\", \"tabelaEtiqueta\");
+          
+           var gg = \"<div id=\\'folhaEtiqueta\\'><table id=\\'tabela\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\";
             for(i=1;i<=10;i++){
-                document.write(\"<tr>\");
+                gg += \"<tr>\";
                 for(j=1;j<=3;j++){
                     
-                    document.write(\"<td><div class=\\' \" + jTipoFolha  + \" \\' > \");
+                    gg += \"<td><div class=\\' \" + jTipoFolha  + \" \\' > \";
                     
                     if((posl>=jPos) && (posl<=(jPos+jQuant-1))){ 
                                       
-                    document.write(\"<div class=\\'divbola\\' id=\\'bola\"+ etiqueta +\"\\'> Bola1</div> \");
-                       document.write(\" <p>Nome: \" + jNomePaciente+ \" <br> Remedio: \" + jNomeRemedio[etiqueta] + \" <br> Hora: \" + jHora[etiqueta] + \" </p>\");
+                    gg += \"<div class=\\'divbola\\' id=\\'bola\"+ etiqueta +\"\\'></div> \";
+                       gg += \" <p>Nome: \" + jNomePaciente+ \" <br> Remedio: \" + jNomeRemedio[etiqueta] + \" <br> Hora: \" + jHora[etiqueta] + \" </p>\";
                         etiqueta++;
                         }
-                    document.write(\"</div></td>\");
+                    gg += \"</div></td>\";
                posl++;
                 }
-                document.write(\"</tr>\")
-            }
+                gg += \"</tr>\"
+             }
+           gg += \"</table></div>\";
+           g.innerHTML += gg;
+          document.getElementById(\"folha\").appendChild(g);
           }
           function fazTabelaEtiqueta2() {
+          removetables()
           var i,j;
           var etiqueta = 1;
-          document.write(\"<div id=\\'tabelaHorario\\'><div id=\\'folhaHorario\\'><table id=\\'tabelaH\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\");
-                document.write(\"<tr>\");
+          
+                    var g = document.createElement(\"DIV\");
+          
+          g.setAttribute(\"id\", \"tabelaHorario\");
+          
+          var gg = \"<div id=\\'folhaHorario\\'><table id=\\'tabelaH\\' cellspacing=\\'0\\' cellpadding=\\'0\\'>\";
+                gg += \"<tr>\";
                 
-                document.write(\"<td id=\\'tabelaH1\\'>\");
-                document.write(\" <p>OIOI</p>\");
-                document.write(\"</td>\");
+                gg += \"<td id=\\'tabelaH1\\'>\";
+                gg += \"<p>Img-Farmasim</p><p>Paciente: \"+ jNomePaciente + \"</p>\";
+                gg += \"</td>\";
                 
-                document.write(\"<td class=\\'tabelaH2\\'>\");
-                document.write(\" <p>22222</p>\");
-                document.write(\"</td>\");
+                gg += \"<td class=\\'tabelaH2\\'>\";
+                gg += \" <p>Img-hora-1</p>\";
+                gg += \"</td>\";
                                 
-                document.write(\"<td class=\\'tabelaH2\\'>\");
-                document.write(\" <p>33333</p>\");
-                document.write(\"</td>\");
+                gg += \"<td class=\\'tabelaH2\\'>\";
+                gg += \" <p>Img-hora-2</p>\";
+                gg += \"</td>\";
                                 
-                document.write(\"<td class=\\'tabelaH2\\'>\");
-                document.write(\" <p>444444</p>\");
-                document.write(\"</td>\");
+                gg += \"<td class=\\'tabelaH2\\'>\";
+                gg += \" <p>Img-hora-3</p>\";
+                gg += \"</td>\";
                                 
-                document.write(\"<td class=\\'tabelaH2\\'>\");
-                document.write(\" <p>55555</p>\");
-                document.write(\"</td>\");
+                gg += \"<td class=\\'tabelaH2\\'>\";
+                gg += \" <p>Img-hora-4</p>\";
+                gg += \"</td>\";
                                 
-                document.write(\"<td class=\\'tabelaH2\\'>\");
-                document.write(\" <p>666666</p>\");
-                document.write(\"</td>\");
-                document.write(\"</tr>\")
+                gg += \"<td class=\\'tabelaH2\\'>\";
+                gg += \"<p>Img-hora-5</p>\";
+                gg += \"</td>\";
+                gg += \"</tr>\"
                 for(i=1;i<=jQuant;i++){
-                document.write(\"<tr>\");
+                gg += \"<tr>\";
                 for(j=0;j<=5;j++){
                     
-                    document.write(\"<td class=\\'tabelaNomeRemedio\\'><div>\");
+                    gg += \"<td class=\\'tabelaNomeRemedio\\'><div>\";
                                    
                     if(j==0){ 
-                              document.write(\" <p>\" + jNomeRemedio[etiqueta] + \" </p>\");        
+                              gg += \" <p>\" + jNomeRemedio[etiqueta] + \" </p>\";        
                        }
                     if(j==jHora[etiqueta]){
-                        document.write(\"<div class=\\'divbola\\' id=\\'bola\"+ etiqueta +\"\\'> Bola1</div> \");
+                        gg += \"<div class=\\'divbola2\\' id=\\'bola\"+ etiqueta +\"\\'></div> \";
                     }
                                           
-                    document.write(\"</div></td>\");
+                    gg += \"</div></td>\";
                
                 }
                 etiqueta++;
-                document.write(\"</tr>\")
-            }
+                gg += \"</tr>\";
+                }
+                gg += \"</table></div>\";
+           g.innerHTML += gg;
+          document.getElementById(\"folha\").appendChild(g);
           }
                 
                 
@@ -121,15 +149,15 @@
     }
 
     ?>
+
 </head>
 <body id="folha">
-        <script>fazTabelaEtiqueta2();</script>
+<div id="boxbutton">
+<button type="button" onclick="fazTabelaEtiqueta1()">Etiqueta!</button>
+<button type="button" onclick="fazTabelaEtiqueta2()">Tabela!</button>
+</div>
 
 
-    </table>
-</div>
-</div>
-</body>
 </body>
 
 </html>

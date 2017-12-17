@@ -61,7 +61,7 @@
                             addEtiqueta()
                         }
                     </script>
-                    <button type="button" onclick="addEtiqueta()">Click Me!</button>
+                    <button type="button" onclick="addEtiqueta()">Adicionar Etiqueta!</button>
                 </fildset>
 
             </fildset>
