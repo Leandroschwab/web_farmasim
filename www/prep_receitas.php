@@ -5,18 +5,7 @@
     <title>FarmaSIM</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/prep_receitas.css">
-    <script>
-        var numEtiquetas = 1;
-        var numEtiquetasTotal = 1;
-        function addEtiqueta() {
-
-            var para = document.createElement("DIV");
-            para.innerHTML += '<div><p><label for=\"cNomeRemedio'+ numEtiquetas + '\">Nome do remédio '+ numEtiquetas + ':  </label><input type=\"text\" name=\"tNomeRemedio'+ numEtiquetas + '\" id=\"cNomeRemedio'+ numEtiquetas + '\" size=\"40\" maxlength=\"40\" placeholder=\"Nome do remédio\"></p><p><label for=\"CHora'+ numEtiquetas + '\">Hora: </label><select name=\"tHora'+ numEtiquetas + '\" id=\"CHora'+ numEtiquetas + '\"><option value=\"1\" selected>06:00</option><option value=\"2\">07:00</option><option value=\"3\">12:00</option><option value=\"4\">19:00</option><option value=\"5\">21:00</option></select ></p><p><label for=\"cCor'+ numEtiquetas + '\">Cor: </label><input type=\"color\" name=\"tCor'+ numEtiquetas + '\" id=\"cCor'+ numEtiquetas + '\"></p></div>';
-            document.getElementById("myDIV").appendChild(para);
-            document.getElementById("cNumEtiquetas").value = numEtiquetas;
-            numEtiquetas++;
-        };
-    </script>
+    <script type="text/javascript" src="_js/prep_receitas.js"></script>
 </head>
 <body>
 <div id="interface">

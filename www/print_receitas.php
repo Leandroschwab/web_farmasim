@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title>FarmaSIM</title>
     <link rel="stylesheet" href="_css/etiqueta.css"/>
+
     <?php
     $tipoFolha = $_POST["tTipoFolha"];
     $pos =1;
@@ -21,19 +22,29 @@
         var jNomePaciente =\"" . $nomePaciente . "\";
         var jQuant=" .$quant . ";
         var jNomeRemedio = [];
+        var jTHoras=[];
         var jHora = [];
         var jCor = [];
    ");
 
     for ($i = 1; $i <= $quant; $i++) {
         $nomeRemedio[$i] = $_POST["tNomeRemedio" . $i];
-        $hora[$i] = $_POST["tHora" . $i];
+        $tHoras[$i]=$_POST["tNumHoras".$i];
+        echo (" jHora[$i]=[]");
+        for ($j=1; $j<=$tHoras[$i]; $j++){
+            $hora[$i][$j] = $_POST["tHora" . $i."-".$j];
+            $horae=$hora[$i][$j];
+            echo ("
+            jHora[$i][$j] = \"$horae\";
+            ");
+        }
+
         $cor[$i] = $_POST["tCor" . $i];
         echo("
         jNomeRemedio[$i] =\"$nomeRemedio[$i]\";
-        jHora[$i] = \"$hora[$i]\";
         jCor[$i] = \"$cor[$i]\";
-");
+        jTHoras[$i] = \"$tHoras[$i]\";
+        ");
     };
     echo('</script>');
 ?>
@@ -50,6 +61,8 @@
     }
 
     ?>
+
+
 
 </head>
 <body id="folha">

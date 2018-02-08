@@ -28,7 +28,7 @@ function fazTabelaEtiqueta1() {
             if((posl>=jPos) && (posl<=(jPos+jQuant-1))){
 
                 gg += "<div class=\'divbola\' id=\'bola"+ etiqueta +"\'></div> ";
-                gg += " <p>Nome: " + jNomePaciente+ " <br> Remedio: " + jNomeRemedio[etiqueta] + " <br> Hora: " + jHora[etiqueta] + " </p>";
+                gg += " <p>Nome: " + jNomePaciente+ " <br> Remedio: " + jNomeRemedio[etiqueta] + " <br> Hora: " + jHora[etiqueta][1]+ " </p>";
                 etiqueta++;
             }
             gg += "</div></td>";
@@ -85,7 +85,7 @@ function fazTabelaEtiqueta2() {
             if(j==0){
                 gg += " <p>" + jNomeRemedio[etiqueta] + " </p>";
             }
-            if(j==jHora[etiqueta]){
+            if(j==jHora[etiqueta][1]){
                 gg += "<div class=\'divbola2\' id=\'bola"+ etiqueta +"\'></div> ";
             }
 

@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="../_css/estilo.css"/>
-</head>
-
-<body>
-
-
     <header id="cabecalho">
 
         <nav id="menu-top">
@@ -23,8 +13,3 @@
 
 
     </header>
-
-
-</body>
-
-</html>
