@@ -8,14 +8,15 @@ function removetables(){
         elem.parentNode.removeChild(elem);
     }
 }
+
+
 function fazTabelaEtiqueta1() {
     removetables();
     var posl = 1;
     var i,j;
     var etiqueta = 1;
-
+    var numHora =1;
     var g = document.createElement("DIV");
-
     g.setAttribute("id", "tabelaEtiqueta");
 
     var gg = "<div id=\'folhaEtiqueta\'><table id=\'tabela\' cellspacing=\'0\' cellpadding=\'0\'>";
@@ -28,8 +29,15 @@ function fazTabelaEtiqueta1() {
             if((posl>=jPos) && (posl<=(jPos+jQuant-1))){
 
                 gg += "<div class=\'divbola\' id=\'bola"+ etiqueta +"\'></div> ";
-                gg += " <p>Nome: " + jNomePaciente+ " <br> Remedio: " + jNomeRemedio[etiqueta] + " <br> Hora: " + jHora[etiqueta][1]+ " </p>";
+                gg += " <p>Nome: " + jNomePaciente+ " <br> Remedio: " + jNomeRemedio[etiqueta] + " <br> Horário: " + jHora[etiqueta][numHora];
+                numHora++;
+                while (jHora[etiqueta][numHora]!=null) {
+                    gg += " e " + jHora[etiqueta][numHora];
+                    numHora++;
+                }
+                numHora =1;
                 etiqueta++;
+
             }
             gg += "</div></td>";
             posl++;
@@ -44,7 +52,7 @@ function fazTabelaEtiqueta2() {
     removetables();
     var i,j;
     var etiqueta = 1;
-
+    var horarios =[00,"06:00","07:00","12:00","19:00","21:00"];
     var g = document.createElement("DIV");
 
     g.setAttribute("id", "tabelaHorario");
@@ -85,8 +93,10 @@ function fazTabelaEtiqueta2() {
             if(j==0){
                 gg += " <p>" + jNomeRemedio[etiqueta] + " </p>";
             }
-            if(j==jHora[etiqueta][1]){
-                gg += "<div class=\'divbola2\' id=\'bola"+ etiqueta +"\'></div> ";
+            for(k=1;k<=jTHoras[etiqueta];k++){
+                if(horarios[j]==jHora[etiqueta][k]){
+                    gg += "<div class=\'divbola2\' id=\'bola"+ etiqueta +"\'></div> ";
+                }
             }
 
             gg += "</div></td>";
