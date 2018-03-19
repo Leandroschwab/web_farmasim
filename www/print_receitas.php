@@ -61,6 +61,7 @@
     }
 
     ?>
+    <?php include("_functions/add_db.php"); ?>
 
 
 
