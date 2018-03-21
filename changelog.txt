@@ -1,3 +1,4 @@
 ﻿banco de dados implementado
+Adicionar múltiplos horários para o mesmo remédio
 v.alpha.01
 Sistema de impressão de etiqueta e tabela de horários básico.

@@ -2,7 +2,10 @@
 buscar imagens para os horarios
 
 
+
 remover horários extras e remédios extras
+
+Salvar dados em arquivo txt para ser acessado servidor do aplicativo
 
 Servidor-
 

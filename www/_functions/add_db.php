@@ -38,25 +38,30 @@ if ($conne->query($sql) ===true){
     echo"error add db ";
 }
 }
-function set_horario($id_receita,$nomeremedio_DB,$hora_DB=array(),$cor_DB,$numremedios_DB,$conne){
+function set_horario($id_receita,array $nomeremedio_DB,array $hora_DB,array  $cor_DB,$numremedios_DB,$conne){
+    $sql="INSERT INTO `horarios`(`id-receita`, `Nome Remedio`, `cor`, `6:00`, `7:00`, `12:00`, `19:00`, `21:00`) VALUES";
     for ($i=1; $i<=$numremedios_DB; $i++){
-        $sql= "INSERT INTO `horarios`(`id-receita`, `Nome Remedio`, `cor`, `6:00`, `7:00`, `12:00`, `19:00`, `21:00`) VALUES ('$id_receita', '$nomeremedio_DB[$i]' , '$cor_DB[$i]'";
+        $sql.= " ('$id_receita', '$nomeremedio_DB[$i]' , '$cor_DB[$i]'";
        for ($j=1; $j<=5; $j++){
            $horae=$hora_DB[$i][$j];
            echo" $horae ";
-            if($hora_DB[$i][$j]=true){
+            if($hora_DB[$i][$j]==true){
                 $sql .=",true";
             }else{
                 $sql .=",false";
             };
-        }
+        };
 
         $sql .= ")";
+        if ($i<$numremedios_DB){
+            $sql .= ",";
+        };
     }
+    echo" $sql ";
     if ($conne->query($sql) ===true){
-        echo ('2222222new record create successfully ');
+        echo ('horarios salvos');
     }else{
-        echo"222222error add db ";
+        echo"erro salvar horarios ";
     }
 
 }

@@ -61,7 +61,7 @@
           }
       </style>");
     }
-$hora_DB;
+$hora_DB=array(array());
     for ($i = 1; $i <= $quant; $i++) {
          for ($j=1; $j<=5; $j++){
               $hora_DB[$i][$j]=false;
@@ -72,24 +72,30 @@ $hora_DB;
             switch ($horae) {
                 case "06:00":
                     $hora_DB[$i][1]=true;
+
                     break;
                 case "07:00":
                     $hora_DB[$i][2]=true;
+
                     break;
                 case "12:00":
                     $hora_DB[$i][3]=true;
+
                     break;
                 case "19:00":
                     $hora_DB[$i][4]=true;
+
                     break;
                 case "21:00":
-                    $hora_DB[$i][4]=true;
+                    $hora_DB[$i][5]=true;
+
                     break;
             }
 
         }
 
     };
+
 
 
 
