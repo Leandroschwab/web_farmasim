@@ -14,8 +14,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -24,13 +24,18 @@
       <file leaf-file-name="add_db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/_functions/add_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="752">
+              <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
               <folding>
-                <marker date="1521429222619" expanded="true" signature="292:349" ph="SELECT `valo... config" />
-                <marker date="1521429222619" expanded="true" signature="498:562" ph="UPDATE `conf... " />
-                <marker date="1521429222619" expanded="true" signature="626:638" ph="INSERT INTO RECEITAS... " />
-                <marker date="1521429222619" expanded="true" signature="626:739" ph="INSERT INTO RECEITAS... " />
+                <element signature="n#get_indice#0;n#!!top" expanded="false" />
+                <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+                <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+                <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+                <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+                <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+                <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+                <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+                <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
               </folding>
             </state>
           </provider>
@@ -39,12 +44,34 @@
       <file leaf-file-name="print_receitas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/print_receitas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="275">
+              <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="30" />
               <folding>
-                <marker date="1521059346172" expanded="true" signature="388:662" ph="..." />
-                <marker date="1521059346172" expanded="true" signature="1418:1529" ph="..." />
-                <marker date="1521059346172" expanded="true" signature="1444:1515" ph="{...}" />
+                <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+                <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+                <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prep_receitas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/_js/prep_receitas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="193" lean-forward="true" selection-start-line="9" selection-start-column="193" selection-end-line="9" selection-end-column="202" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_receitas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/_js/print_receitas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!block;n#fazTabelaEtiqueta1#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,9 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/print_receitas.php" />
-        <option value="$PROJECT_DIR$/www/config.php" />
         <option value="/&lt;Generic SQL&gt; Fragment (add_db.php:241).sql" />
+        <option value="$PROJECT_DIR$/127_0_0_1.sql" />
+        <option value="$PROJECT_DIR$/www/config.php" />
+        <option value="$PROJECT_DIR$/www/print_receitas.php" />
         <option value="$PROJECT_DIR$/www/_functions/add_db.php" />
       </list>
     </option>
@@ -72,7 +100,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="70" />
     <option name="width" value="1400" />
@@ -106,24 +134,6 @@
               <item name="web_farmasim" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_farmasim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web_farmasim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_farmasim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_functions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web_farmasim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_farmasim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_imagens" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web_farmasim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_farmasim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_includes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="web_farmasim" type="b2602c69:ProjectViewProjectNode" />
@@ -168,17 +178,18 @@
       <workItem from="1521131760858" duration="3042000" />
       <workItem from="1521139276260" duration="3292000" />
       <workItem from="1521423354013" duration="4110000" />
+      <workItem from="1521567303846" duration="127000" />
+      <workItem from="1521571898494" duration="9182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12307000" />
+    <option name="totallyTimeSpent" value="21616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1162" extended-state="7" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1162" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -205,11 +216,75 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/_functions/add_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/print_receitas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+          <folding>
+            <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/_functions/add_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -223,10 +298,15 @@
         <state relative-caret-position="225">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1521429222619" expanded="true" signature="292:349" ph="SELECT `valo... config" />
-            <marker date="1521429222619" expanded="true" signature="498:562" ph="UPDATE `conf... " />
-            <marker date="1521429222619" expanded="true" signature="626:638" ph="INSERT INTO RECEITAS... " />
-            <marker date="1521429222619" expanded="true" signature="626:739" ph="INSERT INTO RECEITAS... " />
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
           </folding>
         </state>
       </provider>
@@ -236,9 +316,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521059346172" expanded="true" signature="388:662" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1418:1529" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1444:1515" ph="{...}" />
+            <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -256,9 +336,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521059346172" expanded="true" signature="388:662" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1418:1529" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1444:1515" ph="{...}" />
+            <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -268,10 +348,15 @@
         <state relative-caret-position="200">
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <marker date="1521429222619" expanded="true" signature="292:349" ph="SELECT `valo... config" />
-            <marker date="1521429222619" expanded="true" signature="498:562" ph="UPDATE `conf... " />
-            <marker date="1521429222619" expanded="true" signature="626:638" ph="INSERT INTO RECEITAS... " />
-            <marker date="1521429222619" expanded="true" signature="626:739" ph="INSERT INTO RECEITAS... " />
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
           </folding>
         </state>
       </provider>
@@ -289,9 +374,9 @@
         <state relative-caret-position="475">
           <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="40" />
           <folding>
-            <marker date="1521059346172" expanded="true" signature="388:662" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1418:1529" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1444:1515" ph="{...}" />
+            <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -301,10 +386,15 @@
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1521429222619" expanded="true" signature="292:349" ph="SELECT `valo... config" />
-            <marker date="1521429222619" expanded="true" signature="498:562" ph="UPDATE `conf... " />
-            <marker date="1521429222619" expanded="true" signature="626:638" ph="INSERT INTO RECEITAS... " />
-            <marker date="1521429222619" expanded="true" signature="626:739" ph="INSERT INTO RECEITAS... " />
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
           </folding>
         </state>
       </provider>
@@ -313,7 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -321,21 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/_js/prep_receitas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/_js/print_receitas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -347,35 +421,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/127_0_0_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/_js/print_receitas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#fazTabelaEtiqueta1#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="225">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/_js/prep_receitas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="193" lean-forward="true" selection-start-line="9" selection-start-column="193" selection-end-line="9" selection-end-column="202" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/print_receitas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        <state relative-caret-position="275">
+          <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="30" />
           <folding>
-            <marker date="1521059346172" expanded="true" signature="388:662" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1418:1529" ph="..." />
-            <marker date="1521059346172" expanded="true" signature="1444:1515" ph="{...}" />
+            <marker date="1521581473378" expanded="true" signature="388:662" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1487:1598" ph="..." />
+            <marker date="1521581473378" expanded="true" signature="1513:1584" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/_functions/add_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="752">
+          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
           <folding>
-            <marker date="1521429222619" expanded="true" signature="292:349" ph="SELECT `valo... config" />
-            <marker date="1521429222619" expanded="true" signature="498:562" ph="UPDATE `conf... " />
-            <marker date="1521429222619" expanded="true" signature="626:638" ph="INSERT INTO RECEITAS... " />
-            <marker date="1521429222619" expanded="true" signature="626:739" ph="INSERT INTO RECEITAS... " />
+            <element signature="n#get_indice#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#!!top" expanded="false" />
+            <marker date="1521581958257" expanded="true" signature="302:359" ph="SELECT `valo... config" />
+            <marker date="1521581958257" expanded="true" signature="488:552" ph="UPDATE `conf... " />
+            <marker date="1521581958257" expanded="true" signature="963:1080" ph="INSERT INTO `receitas`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1507" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1519" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1766" ph="INSERT INTO `horarios`... " />
+            <marker date="1521581958257" expanded="true" signature="1356:1797" ph="INSERT INTO `horarios`... " />
           </folding>
         </state>
       </provider>

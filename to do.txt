@@ -1,11 +1,8 @@
-Web-
+﻿Web-
 buscar imagens para os horarios
 
-Adicionar múltiplos horários para o mesmo remédio
 
 remover horários extras e remédios extras
-
-Salvar dados em arquivo txt para ser acessado servidor do aplicativo
 
 Servidor-
 

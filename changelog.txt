@@ -1,2 +1,3 @@
+﻿banco de dados implementado
 v.alpha.01
 Sistema de impressão de etiqueta e tabela de horários básico.

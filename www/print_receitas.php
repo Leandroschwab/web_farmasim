@@ -30,10 +30,12 @@
     for ($i = 1; $i <= $quant; $i++) {
         $nomeRemedio[$i] = $_POST["tNomeRemedio" . $i];
         $tHoras[$i]=$_POST["tNumHoras".$i];
+
         echo (" jHora[$i]=[]");
         for ($j=1; $j<=$tHoras[$i]; $j++){
             $hora[$i][$j] = $_POST["tHora" . $i."-".$j];
             $horae=$hora[$i][$j];
+                                        //passa hora pro javascript
             echo ("
             jHora[$i][$j] = \"$horae\";
             ");
@@ -59,6 +61,39 @@
           }
       </style>");
     }
+$hora_DB;
+    for ($i = 1; $i <= $quant; $i++) {
+         for ($j=1; $j<=5; $j++){
+              $hora_DB[$i][$j]=false;
+          }
+        for ($j=1; $j<=$tHoras[$i]; $j++){
+            $horae=$hora[$i][$j];
+            echo"$horae";
+            switch ($horae) {
+                case "06:00":
+                    $hora_DB[$i][1]=true;
+                    break;
+                case "07:00":
+                    $hora_DB[$i][2]=true;
+                    break;
+                case "12:00":
+                    $hora_DB[$i][3]=true;
+                    break;
+                case "19:00":
+                    $hora_DB[$i][4]=true;
+                    break;
+                case "21:00":
+                    $hora_DB[$i][4]=true;
+                    break;
+            }
+
+        }
+
+    };
+
+
+
+
 
     ?>
     <?php include("_functions/add_db.php"); ?>
