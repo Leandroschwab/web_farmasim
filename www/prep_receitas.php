@@ -42,11 +42,14 @@
             <br>
             <fildset>
                 <legend>Info da paciente</legend>
-                <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente" id="cNomePaciente" size="40" maxlength="40" placeholder="Nome do Paciente"></p>
+                <p><label for="cNomePaciente">Nome do paciente: </label><input type="text" name="tNomePaciente"
+                                                                               id="cNomePaciente" size="40"
+                                                                               maxlength="40"
+                                                                               placeholder="Nome do Paciente"></p>
                 <fildset>
                     <div id="myDIV"></div>
                     <script>
-                        while(numEtiquetas<=numEtiquetasTotal){
+                        while (numEtiquetas <= numEtiquetasTotal) {
                             addEtiqueta()
                         }
                     </script>
