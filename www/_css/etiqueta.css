@@ -20,13 +20,12 @@ div#boxbutton{
 div#folhaTabela{
     width: 215.9mm;
     height: 279.4mm;
-    background-color: #ccbab0;
     margin: auto;
 }
 div#folhaEtiqueta{
     width: 215.9mm;
     height: 279.4mm;
-    background-color: #ccbab0;
+
     margin: auto;
 }
 table#tabela{
@@ -38,7 +37,6 @@ div.p6080{
     width: 66.7mm;
     height: 25.4mm;
     margin-left: 3.9mm;
-    background-color: #dddddd;
 }
 div.p6080 p{
     margin:0mm;
@@ -58,7 +56,6 @@ div.divbola{
 div#folhaHorario{
     height: 215.9mm;
     width: 279.4mm;
-    background-color: #ccbab0;
     margin: auto;
 }
 table#tabelaH{
@@ -75,7 +72,6 @@ td#tabelaH1{
     width: 50mm;
     height: 40mm;
     margin-left: 0mm;
-    background-color: #dddddd;
 }
 td#tabelaH1 p{
 
@@ -86,13 +82,11 @@ td.tabelaH2{
     width: 30mm;
     height: 40mm;
     margin-left: 0mm;
-    background-color: #dddddd;
     text-align: center;
 }
 td.tabelaNomeRemedio{
     height: 12mm;
     margin-left: mm;
-    background-color: #dddddd;
 }
 td.tabelaNomeRemedio p{
     margin-left: 4mm;

@@ -66,23 +66,23 @@ function fazTabelaEtiqueta2() {
     gg += "</td>";
 
     gg += "<td class=\'tabelaH2\'>";
-    gg += '<img src=\'C:/Farmasim/web_farmasim/www/_imagens/galo_manha.jpg\'>';
+    gg += '<img src=\'http://farmasim.esy.es/_imagens/galo_manha.jpg\'>';
     gg += "</td>";
 
     gg += "<td class=\'tabelaH2\'>";
-    gg += " <p>Img-hora-2</p>";
+    gg += '<img src=\'http://farmasim.esy.es/_imagens/cafe.jpg\'>';
     gg += "</td>";
 
     gg += "<td class=\'tabelaH2\'>";
-    gg += " <p>Img-hora-3</p>";
+    gg += '<img src=\'http://farmasim.esy.es/_imagens/prato.jpg\'>';
     gg += "</td>";
 
     gg += "<td class=\'tabelaH2\'>";
-    gg += " <p>Img-hora-4</p>";
+    gg += '<img src=\'http://farmasim.esy.es/_imagens/lua.jpg\'>';
     gg += "</td>";
 
     gg += "<td class=\'tabelaH2\'>";
-    gg += "<p>Img-hora-5</p>";
+    gg += '<img src=\'http://farmasim.esy.es/_imagens/dormindo.jpg\'>';
     gg += "</td>";
     gg += "</tr>";
     for (i = 1; i <= jQuant; i++) {
